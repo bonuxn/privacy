@@ -3,49 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>プライバシーポリシー | わたしの本棚</title>
+<title>プライバシーポリシー / Privacy Policy | わたしの本棚 (My Bookshelf)</title>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; line-height: 1.8; max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; color: #3A2A1D; background: #FDF6EA; }
   h1 { font-size: 1.5rem; border-bottom: 3px solid #D9862E; padding-bottom: 8px; }
   h2 { font-size: 1.15rem; margin-top: 2em; color: #5A3620; }
   .updated { color: #8A7360; font-size: 0.9rem; }
+  .lang { margin: 0 0 24px; }
+  .lang a { color: #D9862E; margin-right: 12px; }
   ul { padding-left: 1.4em; }
+  a { color: #B5651D; }
+  hr { border: none; border-top: 1px solid #E2D3BC; margin: 56px 0; }
 </style>
 </head>
 <body>
 
+<p class="lang"><a href="#ja">日本語</a><a href="#en">English</a></p>
+
+<section id="ja" lang="ja">
 <h1>プライバシーポリシー(わたしの本棚)</h1>
-<p class="updated">最終更新日: 2026年9月8日</p>
+<p class="updated">最終更新日: 2026年10月17日</p>
 
 <p>
 「わたしの本棚」(以下、本アプリ)は、購入した紙の本(漫画などの巻もの)を管理するためのアプリです。
-本アプリの開発者(以下、開発者)は、利用者のプライバシーを尊重し、以下のとおり本アプリにおける情報の取り扱いについて説明します。
+本アプリの開発者(以下、開発者)は、本アプリにおける情報の取り扱いについて以下のとおり説明します。
 </p>
 
-<h2>1. 収集する情報</h2>
+<h2>1. 端末内にのみ保存する情報</h2>
 <p>
-本アプリは、外部サーバーへの通信を行いません。利用者が入力・撮影した情報(シリーズ名・巻数・作者・出版社・購入日・メモ・表紙写真など)は、
-すべて利用者の端末内(ローカルストレージ・端末内データベース)にのみ保存され、開発者を含む第三者に送信・共有されることはありません。
+利用者が入力・撮影した情報(シリーズ名・巻数・作者・出版社・購入日・メモ・表紙写真)と、アプリ内で選んだ表示言語の設定は、
+利用者の端末内にのみ保存されます。これらの情報が開発者や第三者に送信されることはありません。
+開発者が運営するサーバーはなく、開発者がこれらの情報を受け取ることもありません。
 </p>
 
-<h2>2. カメラへのアクセスについて</h2>
+<h2>2. カメラと表紙の文字認識について</h2>
 <p>
-本アプリは表紙写真の撮影・登録のためにカメラへのアクセス権限を利用します。撮影した画像は端末内にのみ保存され、外部へ送信されることはありません。
-また、表紙の文字認識(OCR)は端末内で完結する処理であり、画像や認識結果が外部に送信されることはありません
-(認識モデル自体は初回利用時に端末にダウンロードされますが、これは画像データの送信ではありません)。
+本アプリは、表紙写真の撮影のためにカメラへのアクセス権限を利用します。
+撮影・選択した画像からの文字認識(OCR)は、Google が提供する ML Kit を使って端末内で行われ、画像や認識した文字が外部へ送信されることはありません。
 </p>
 
-<h2>3. 第三者への提供</h2>
-<p>本アプリは、利用者の情報を広告配信事業者や分析事業者を含むいかなる第三者にも提供・共有しません。</p>
-
-<h2>4. データの削除</h2>
+<h2>3. Google ML Kit が収集する情報</h2>
 <p>
-本アプリをアンインストールすると、端末内に保存されていたすべてのデータ(書籍情報・表紙画像)が削除されます。
-アプリ内からも、登録した本を個別に削除できます。
+文字認識に使用している Google ML Kit は、機能の診断と利用状況の分析のため、次の情報を Google に送信します。
+</p>
+<ul>
+  <li>端末の情報(メーカー、機種、OS のバージョンなど)</li>
+  <li>アプリの情報(パッケージ名、バージョン)</li>
+  <li>インストールごとの識別子(利用者や端末を特定することを目的としないもの)</li>
+  <li>処理時間などの性能情報、設定、入出力のサイズ、エラーコードなど</li>
+</ul>
+<p>
+これらの情報は暗号化して送信され、ML Kit から第三者に提供されることはないと Google は説明しています。
+画像や読み取った文字、利用者が入力した本の情報は含まれません。
+詳しくは <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google ML Kit のデータ開示</a> と
+<a href="https://policies.google.com/privacy">Google プライバシーポリシー</a> をご確認ください。
 </p>
 
-<h2>5. 広告・トラッキング</h2>
-<p>本アプリは広告を表示せず、利用状況の分析・トラッキングも行いません。</p>
+<h2>4. 広告・トラッキング</h2>
+<p>本アプリは広告を表示しません。また、開発者が独自に利用状況を分析・追跡することはありません。</p>
+
+<h2>5. データの削除</h2>
+<p>
+アプリ内から、登録した本を個別に削除できます。
+本アプリをアンインストールすると、端末内に保存されていたすべてのデータ(書籍情報・表紙画像・設定)が削除されます。
+</p>
 
 <h2>6. 本ポリシーの変更</h2>
 <p>本ポリシーの内容は、本アプリの更新に伴い変更されることがあります。重要な変更がある場合は、本ページ上で告知します。</p>
@@ -56,6 +77,70 @@
   <li>開発者: maruta</li>
   <li>連絡先: delacs1739@gmail.com</li>
 </ul>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>Privacy Policy (My Bookshelf)</h1>
+<p class="updated">Last updated: October 17, 2026</p>
+
+<p>
+“My Bookshelf” (the “App”) helps you keep track of the paper books you have bought, such as manga volumes.
+This policy explains how the App handles information.
+</p>
+
+<h2>1. Information stored only on your device</h2>
+<p>
+The information you enter or capture (series, volume, author, publisher, purchase date, notes and cover photos)
+and the display language you choose in the App are stored only on your device.
+This information is never sent to the developer or to any third party.
+The developer does not operate any server and does not receive this information.
+</p>
+
+<h2>2. Camera and cover text recognition</h2>
+<p>
+The App uses the camera permission so you can photograph book covers.
+Text recognition (OCR) on the photos you take or select is performed on your device using Google ML Kit.
+The images and the recognized text are not sent anywhere.
+</p>
+
+<h2>3. Information collected by Google ML Kit</h2>
+<p>
+Google ML Kit, which the App uses for text recognition, sends the following information to Google for diagnostics and usage analytics:
+</p>
+<ul>
+  <li>Device information (manufacturer, model, OS version, etc.)</li>
+  <li>App information (package name and version)</li>
+  <li>Per-installation identifiers (not intended to identify a user or a physical device)</li>
+  <li>Performance metrics such as latency, API settings, input/output sizes and error codes</li>
+</ul>
+<p>
+Google states that this data is encrypted in transit and that ML Kit does not transfer it to third parties.
+It does not include your photos, the recognized text, or the book information you enter.
+For details, see <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google ML Kit data disclosure</a>
+and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+</p>
+
+<h2>4. Ads and tracking</h2>
+<p>The App does not show ads. The developer does not analyze or track how you use the App.</p>
+
+<h2>5. Deleting your data</h2>
+<p>
+You can delete individual books in the App.
+Uninstalling the App deletes all data stored on your device (book information, cover images and settings).
+</p>
+
+<h2>6. Changes to this policy</h2>
+<p>This policy may change when the App is updated. Important changes will be announced on this page.</p>
+
+<h2>7. Contact</h2>
+<p>If you have any questions about this policy, please contact:</p>
+<ul>
+  <li>Developer: maruta</li>
+  <li>Email: delacs1739@gmail.com</li>
+</ul>
+</section>
 
 </body>
 </html>
